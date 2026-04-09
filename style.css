@@ -1,0 +1,85 @@
+body{
+    display: grid;
+    justify-content: center;
+    align-items:center;
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(106, 106, 190);
+    /* background-image:url('WhatsApp Image 2026-04-09 at 6.46.13 PM.jpeg'); */
+
+}
+.calculator{
+    background-color: aqua;
+    border-radius: 10%;
+    padding: 20px;
+    /* box-shadow: 10px 10px 10px 10px rgba(100, 100g, 80, 0.806); */
+    width: 250px;
+    border: black;
+    border-style: double;
+    border-width: 10px;
+    animation: pulsateBorder 2s infinite;
+}
+@keyframes pulsateBorder {
+    0%{
+        border-color: rgb(115, 0, 255);
+    }
+50%{
+    border-color: black;
+}
+100%{
+    border-color: rgb(27, 27, 104);
+}
+}
+#result{
+    width: 90%;
+     margin-bottom: 10px;
+    padding: 10px;
+    font-size: 18px;
+    background-color: blanchedalmond;
+    font-weight: bold;
+    margin-top: 10%; 
+    margin-bottom: 10%;
+    border-radius: 10px;
+}
+.keypad{
+        display: grid;
+        grid-template-columns:repeat(4,1fr) ;
+        grid-gap: 5px;
+    }
+    button{
+        padding: 5px;
+        font-size: 18px;
+        font-weight: bold;
+        background-color: rgb(128, 128, 30);
+        color:black;
+        border-radius: 8px;
+         /* box-shadow: 10px 10px 10px 10px rgba(100, 100g, 80, 0.806); */
+        
+    }
+    button:hover{
+        background-color: rgb(11, 87, 87);
+        color: white;
+    }
+     .resetBtn{
+        color: rgb(225, 216, 216); 
+        font-weight: bold;
+     }
+     .delBtn{
+        color: yellow;
+        font-weight: bold;
+     }
+    .opBtn{
+        color: beige;
+        font-weight: bold;
+    }
+    footer{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        background-color:aquamarine;
+        font-size: 20px;
+        animation: pulsateBorder 5s;
+        font-weight: bold;
+        
+    }
